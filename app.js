@@ -8,8 +8,6 @@ const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const passport = require('passport');
 
-
-
 // Load Models
 require('./models/User');
 require('./models/Story');
@@ -19,8 +17,9 @@ require('./config/passport')(passport);
 
 // Load Routes
 const index = require('./routes/index');
-const stories = require('./routes/stories');
 const auth = require('./routes/auth');
+const stories = require('./routes/stories');
+
 
 
 // Load Keys
